@@ -40,7 +40,7 @@ namespace R5T.F0022
                 .Append(node.GetFirstToken_HandleDocumentationComments())
                 // There will be duplicates if there are multiple lines between tokens (which is always).
                 .Distinct()
-                .Now();
+                .Now_OLD();
 
             // Annotate tokens.
             node = node.AnnotateTokens_Untyped(
